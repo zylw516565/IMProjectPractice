@@ -1,0 +1,1261 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="base\Base64.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="base\BaseSocket.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="base\Condition.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="base\ConfigFileReader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="base\EncDec.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="base\EventDispatch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="base\HttpClient.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="base\HttpParserWrapper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="base\http_parser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="base\imconn.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="base\ImPduBase.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="base\im_conn_util.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="base\Lock.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="base\log4z.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="base\netlib.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="base\ServInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="base\Thread.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="base\ThreadPool.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="base\TokenValidator.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="base\util.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="base\UtilPdu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="base\jsoncpp\json_reader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="base\jsoncpp\json_value.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="base\jsoncpp\json_writer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="base\pb\protocol\IM.BaseDefine.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="base\pb\protocol\IM.Buddy.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="base\pb\protocol\IM.File.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="base\pb\protocol\IM.Group.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="base\pb\protocol\IM.Login.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="base\pb\protocol\IM.Message.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="base\pb\protocol\IM.Other.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="base\pb\protocol\IM.Server.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="base\pb\protocol\IM.SwitchService.pb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="db_proxy_server\AutoPool.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="db_proxy_server\CachePool.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="db_proxy_server\DBPool.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="db_proxy_server\db_proxy_server.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="db_proxy_server\HandlerMap.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="db_proxy_server\ProxyConn.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="db_proxy_server\ProxyTask.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="db_proxy_server\SyncCenter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="db_proxy_server\business\AudioModel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="db_proxy_server\business\DepartAction.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="db_proxy_server\business\DepartModel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="db_proxy_server\business\ExterLogin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="db_proxy_server\business\FileAction.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="db_proxy_server\business\FileModel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="db_proxy_server\business\GroupAction.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="db_proxy_server\business\GroupMessageModel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="db_proxy_server\business\GroupModel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="db_proxy_server\business\InterLogin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="db_proxy_server\business\Login.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="db_proxy_server\business\MessageContent.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="db_proxy_server\business\MessageCounter.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="db_proxy_server\business\MessageModel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="db_proxy_server\business\RecentSession.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="db_proxy_server\business\RelationModel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="db_proxy_server\business\SessionModel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="db_proxy_server\business\UserAction.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="db_proxy_server\business\UserModel.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="file_server\config_util.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="file_server\file_client_conn.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="file_server\file_msg_server_conn.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="file_server\file_server.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="file_server\transfer_task.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="file_server\transfer_task_manager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="http_msg_server\AttachData.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="http_msg_server\DBServConn.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="http_msg_server\HttpConn.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="http_msg_server\HttpPdu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="http_msg_server\HttpQuery.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="http_msg_server\http_msg_server.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="http_msg_server\RouteServConn.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libsecurity\android\jni\aes_core.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libsecurity\android\jni\base64.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libsecurity\android\jni\md5.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libsecurity\android\jni\security.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libsecurity\src\aes_core.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libsecurity\src\base64.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libsecurity\src\md5.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="libsecurity\src\security.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="log4cxx\console.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="log4cxx\inputstreamreader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="log4cxx\socketoutputstream.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="login_server\HttpConn.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="login_server\ipparser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="login_server\LoginConn.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="login_server\login_server.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="msfs\FileLin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="msfs\FileManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="msfs\HttpConn.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="msfs\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="msfs\StringUtils.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="msg_server\AttachData.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="msg_server\DBServConn.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="msg_server\FileHandler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="msg_server\FileServConn.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="msg_server\GroupChat.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="msg_server\ImUser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="msg_server\jsonxx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="msg_server\LoginServConn.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="msg_server\MsgConn.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="msg_server\msg_server.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="msg_server\PushServConn.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="msg_server\RouteServConn.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="push_server\apns_client.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="push_server\apns_client_handler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="push_server\apns_feedback_handler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="push_server\apns_msg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="push_server\byte_stream.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="push_server\ConfigFileReader.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="push_server\jsonxx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="push_server\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="push_server\pdu_msg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="push_server\push_app.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="push_server\push_server.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="push_server\push_server_handler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="push_server\push_session.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="push_server\push_session_handler.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="push_server\session_manager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="push_server\socket\base_io_stream.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="push_server\socket\epoll_io_loop.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="push_server\socket\io_loop.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="push_server\socket\ssl_client_async.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="push_server\socket\tcp_client_async.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="push_server\socket\tcp_server.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="push_server\socket\tcp_session_async.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="route_server\RouteConn.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="route_server\route_server.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="route_server\UserInfo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="slog\slog_api.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="test\Client.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="test\ClientConn.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="test\SeqAlloctor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="test\test_client.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="tools\daeml.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="base\atomic.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="base\Base64.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="base\BaseSocket.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="base\Condition.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="base\ConfigFileReader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="base\EncDec.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="base\EventDispatch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="base\HttpClient.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="base\HttpParserWrapper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="base\http_parser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="base\imconn.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="base\impdu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="base\ImPduBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="base\im_conn_util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="base\Lock.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="base\log4z.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="base\netlib.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="base\ostype.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="base\public_define.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="base\ServInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="base\singleton.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="base\Task.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="base\Thread.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="base\ThreadPool.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="base\TokenValidator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="base\util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="base\UtilPdu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="base\version.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="base\jsoncpp\json_batchallocator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="base\jsoncpp\json_tool.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="base\jsoncpp\json\assertions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="base\jsoncpp\json\autolink.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="base\jsoncpp\json\config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="base\jsoncpp\json\features.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="base\jsoncpp\json\forwards.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="base\jsoncpp\json\json.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="base\jsoncpp\json\reader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="base\jsoncpp\json\value.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="base\jsoncpp\json\writer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="base\pb\google\protobuf\descriptor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="base\pb\google\protobuf\descriptor.pb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="base\pb\google\protobuf\descriptor_database.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="base\pb\google\protobuf\dynamic_message.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="base\pb\google\protobuf\extension_set.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="base\pb\google\protobuf\generated_enum_reflection.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="base\pb\google\protobuf\generated_message_reflection.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="base\pb\google\protobuf\generated_message_util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="base\pb\google\protobuf\message.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="base\pb\google\protobuf\message_lite.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="base\pb\google\protobuf\reflection_ops.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="base\pb\google\protobuf\repeated_field.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="base\pb\google\protobuf\service.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="base\pb\google\protobuf\text_format.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="base\pb\google\protobuf\unknown_field_set.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="base\pb\google\protobuf\wire_format.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="base\pb\google\protobuf\wire_format_lite.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="base\pb\google\protobuf\wire_format_lite_inl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="base\pb\google\protobuf\compiler\code_generator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="base\pb\google\protobuf\compiler\command_line_interface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="base\pb\google\protobuf\compiler\importer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="base\pb\google\protobuf\compiler\parser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="base\pb\google\protobuf\compiler\plugin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="base\pb\google\protobuf\compiler\plugin.pb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="base\pb\google\protobuf\compiler\cpp\cpp_generator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="base\pb\google\protobuf\compiler\java\java_generator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="base\pb\google\protobuf\compiler\python\python_generator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="base\pb\google\protobuf\io\coded_stream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="base\pb\google\protobuf\io\gzip_stream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="base\pb\google\protobuf\io\printer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="base\pb\google\protobuf\io\strtod.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="base\pb\google\protobuf\io\tokenizer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="base\pb\google\protobuf\io\zero_copy_stream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="base\pb\google\protobuf\io\zero_copy_stream_impl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="base\pb\google\protobuf\io\zero_copy_stream_impl_lite.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="base\pb\google\protobuf\stubs\atomicops.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="base\pb\google\protobuf\stubs\atomicops_internals_arm64_gcc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="base\pb\google\protobuf\stubs\atomicops_internals_arm_gcc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="base\pb\google\protobuf\stubs\atomicops_internals_arm_qnx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="base\pb\google\protobuf\stubs\atomicops_internals_atomicword_compat.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="base\pb\google\protobuf\stubs\atomicops_internals_generic_gcc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="base\pb\google\protobuf\stubs\atomicops_internals_macosx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="base\pb\google\protobuf\stubs\atomicops_internals_mips_gcc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="base\pb\google\protobuf\stubs\atomicops_internals_pnacl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="base\pb\google\protobuf\stubs\atomicops_internals_solaris.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="base\pb\google\protobuf\stubs\atomicops_internals_tsan.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="base\pb\google\protobuf\stubs\atomicops_internals_x86_gcc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="base\pb\google\protobuf\stubs\atomicops_internals_x86_msvc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="base\pb\google\protobuf\stubs\common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="base\pb\google\protobuf\stubs\once.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="base\pb\google\protobuf\stubs\platform_macros.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="base\pb\google\protobuf\stubs\stl_util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="base\pb\google\protobuf\stubs\template_util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="base\pb\google\protobuf\stubs\type_traits.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="base\pb\protocol\IM.BaseDefine.pb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="base\pb\protocol\IM.Buddy.pb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="base\pb\protocol\IM.File.pb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="base\pb\protocol\IM.Group.pb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="base\pb\protocol\IM.Login.pb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="base\pb\protocol\IM.Message.pb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="base\pb\protocol\IM.Other.pb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="base\pb\protocol\IM.Server.pb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="base\pb\protocol\IM.SwitchService.pb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="base\security\security.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="base\slog\slog_api.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="db_proxy_server\async.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="db_proxy_server\AutoPool.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="db_proxy_server\CachePool.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="db_proxy_server\DBPool.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="db_proxy_server\HandlerMap.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="db_proxy_server\hiredis.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="db_proxy_server\ProxyConn.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="db_proxy_server\ProxyTask.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="db_proxy_server\read.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="db_proxy_server\sds.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="db_proxy_server\SyncCenter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="db_proxy_server\business\AudioModel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="db_proxy_server\business\Common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="db_proxy_server\business\DepartAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="db_proxy_server\business\DepartModel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="db_proxy_server\business\ExterLogin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="db_proxy_server\business\FileAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="db_proxy_server\business\FileModel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="db_proxy_server\business\GroupAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="db_proxy_server\business\GroupMessageModel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="db_proxy_server\business\GroupModel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="db_proxy_server\business\InterLogin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="db_proxy_server\business\Login.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="db_proxy_server\business\LoginStrategy.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="db_proxy_server\business\MessageContent.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="db_proxy_server\business\MessageCounter.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="db_proxy_server\business\MessageModel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="db_proxy_server\business\RecentSession.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="db_proxy_server\business\RelationModel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="db_proxy_server\business\SessionModel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="db_proxy_server\business\UserAction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="db_proxy_server\business\UserModel.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="file_server\config_util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="file_server\file_client_conn.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="file_server\file_msg_server_conn.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="file_server\file_server_util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="file_server\offline_file_util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="file_server\transfer_task.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="file_server\transfer_task_manager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="http_msg_server\AttachData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="http_msg_server\DBServConn.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="http_msg_server\HttpConn.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="http_msg_server\HttpPdu.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="http_msg_server\HttpQuery.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="http_msg_server\RouteServConn.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libsecurity\android\jni\aes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libsecurity\android\jni\aes_locl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libsecurity\android\jni\base64.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libsecurity\android\jni\md5.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libsecurity\include\security.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libsecurity\src\aes.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libsecurity\src\aes_locl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libsecurity\src\base64.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="libsecurity\src\md5.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="login_server\HttpConn.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="login_server\ipparser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="login_server\LoginConn.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="msfs\CriticalSection.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="msfs\FileLin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="msfs\FileManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="msfs\HttpConn.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="msfs\Portable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="msfs\StringUtils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="msg_server\AttachData.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="msg_server\DBServConn.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="msg_server\FileHandler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="msg_server\FileServConn.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="msg_server\GroupChat.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="msg_server\ImUser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="msg_server\jsonxx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="msg_server\LoginServConn.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="msg_server\MsgConn.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="msg_server\PushServConn.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="msg_server\RouteServConn.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="protobuf\include\google\protobuf\descriptor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="protobuf\include\google\protobuf\descriptor.pb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="protobuf\include\google\protobuf\descriptor_database.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="protobuf\include\google\protobuf\dynamic_message.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="protobuf\include\google\protobuf\extension_set.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="protobuf\include\google\protobuf\generated_enum_reflection.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="protobuf\include\google\protobuf\generated_message_reflection.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="protobuf\include\google\protobuf\generated_message_util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="protobuf\include\google\protobuf\message.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="protobuf\include\google\protobuf\message_lite.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="protobuf\include\google\protobuf\reflection_ops.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="protobuf\include\google\protobuf\repeated_field.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="protobuf\include\google\protobuf\service.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="protobuf\include\google\protobuf\text_format.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="protobuf\include\google\protobuf\unknown_field_set.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="protobuf\include\google\protobuf\wire_format.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="protobuf\include\google\protobuf\wire_format_lite.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="protobuf\include\google\protobuf\wire_format_lite_inl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="protobuf\include\google\protobuf\compiler\code_generator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="protobuf\include\google\protobuf\compiler\command_line_interface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="protobuf\include\google\protobuf\compiler\importer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="protobuf\include\google\protobuf\compiler\parser.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="protobuf\include\google\protobuf\compiler\plugin.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="protobuf\include\google\protobuf\compiler\plugin.pb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="protobuf\include\google\protobuf\compiler\cpp\cpp_generator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="protobuf\include\google\protobuf\compiler\java\java_generator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="protobuf\include\google\protobuf\compiler\python\python_generator.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="protobuf\include\google\protobuf\io\coded_stream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="protobuf\include\google\protobuf\io\gzip_stream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="protobuf\include\google\protobuf\io\printer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="protobuf\include\google\protobuf\io\strtod.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="protobuf\include\google\protobuf\io\tokenizer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="protobuf\include\google\protobuf\io\zero_copy_stream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="protobuf\include\google\protobuf\io\zero_copy_stream_impl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="protobuf\include\google\protobuf\io\zero_copy_stream_impl_lite.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="protobuf\include\google\protobuf\stubs\atomicops.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="protobuf\include\google\protobuf\stubs\atomicops_internals_arm64_gcc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="protobuf\include\google\protobuf\stubs\atomicops_internals_arm_gcc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="protobuf\include\google\protobuf\stubs\atomicops_internals_arm_qnx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="protobuf\include\google\protobuf\stubs\atomicops_internals_atomicword_compat.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="protobuf\include\google\protobuf\stubs\atomicops_internals_generic_gcc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="protobuf\include\google\protobuf\stubs\atomicops_internals_macosx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="protobuf\include\google\protobuf\stubs\atomicops_internals_mips_gcc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="protobuf\include\google\protobuf\stubs\atomicops_internals_pnacl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="protobuf\include\google\protobuf\stubs\atomicops_internals_solaris.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="protobuf\include\google\protobuf\stubs\atomicops_internals_tsan.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="protobuf\include\google\protobuf\stubs\atomicops_internals_x86_gcc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="protobuf\include\google\protobuf\stubs\atomicops_internals_x86_msvc.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="protobuf\include\google\protobuf\stubs\common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="protobuf\include\google\protobuf\stubs\once.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="protobuf\include\google\protobuf\stubs\platform_macros.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="protobuf\include\google\protobuf\stubs\stl_util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="protobuf\include\google\protobuf\stubs\template_util.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="protobuf\include\google\protobuf\stubs\type_traits.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="push_server\apns_client.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="push_server\apns_client_handler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="push_server\apns_feedback_handler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="push_server\apns_msg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="push_server\byte_stream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="push_server\ConfigFileReader.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="push_server\jsonxx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="push_server\pdu_msg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="push_server\push_app.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="push_server\push_app_define.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="push_server\push_define.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="push_server\push_server.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="push_server\push_server_handler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="push_server\push_session.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="push_server\push_session_handler.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="push_server\session_manager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="push_server\bufferloop\buffer_loop.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="push_server\sigslot\sigslot.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="push_server\socket\base_io_stream.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="push_server\socket\base_msg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="push_server\socket\epoll_io_loop.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="push_server\socket\io_loop.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="push_server\socket\socket_io.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="push_server\socket\socket_io_define.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="push_server\socket\ssl_client_async.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="push_server\socket\tcp_client_async.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="push_server\socket\tcp_server.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="push_server\socket\tcp_session_async.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="push_server\socket\base_handler.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="push_server\socket\base_socket.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="push_server\socket\base_thread.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="push_server\thread\base_thread.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="push_server\timer\Timer.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="push_server\type\base_type.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="route_server\RouteConn.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="route_server\UserInfo.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="slog\slog_api.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="test\Client.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="test\ClientConn.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="test\Common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="test\IPacketCallback.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="test\playsound.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="test\SeqAlloctor.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="base\jsoncpp\json_internalarray.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="base\jsoncpp\json_internalmap.inl">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="base\jsoncpp\json_valueiterator.inl">
+      <Filter>Header Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>
