@@ -6,6 +6,8 @@
  */
 #include "MsgServer.h"
 
+#include "./base/AsyncLog.h"
+
 MsgServer::MsgServer()
 {
 }
@@ -23,5 +25,19 @@ bool MsgServer::Init(const char* ip, short port, EventLoop* loop)
 
 void MsgServer::OnConnection(std::shared_ptr<TcpConnection> conn)
 {
+	if (conn->connected())
+	{
+		LOGD("client connected: %s", conn->peerAddress().c_str());
+		++m_nSessionID;
+		std::shared_ptr<ChatSession> spSession(new ChatSession(conn, m_nSessionID));
+		conn->setMessageCallback(std::bind(&ChatSession::OnRead, spSession.get(), std::placeholders::_1, std::placeholders::_2, std::placeholders::_3));
+
+
+
+	}
+	else
+	{
+
+	}
 
 }
