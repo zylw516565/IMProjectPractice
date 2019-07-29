@@ -32,12 +32,17 @@ void MsgServer::OnConnection(std::shared_ptr<TcpConnection> conn)
 		std::shared_ptr<ChatSession> spSession(new ChatSession(conn, m_nSessionID));
 		conn->setMessageCallback(std::bind(&ChatSession::OnRead, spSession.get(), std::placeholders::_1, std::placeholders::_2, std::placeholders::_3));
 
-
-
+		std::lock_guard<std::mutex> guard(m_SessionMutex);
+		m_SessionList.push_back(conn);
 	}
 	else
 	{
-
+		OnClose(conn);
 	}
+}
 
+void MsgServer::OnClose(std::shared_ptr<TcpConnection> conn)
+{
+	//判断是否有用户下线
+	//TODO: 增加离线回话处理
 }
