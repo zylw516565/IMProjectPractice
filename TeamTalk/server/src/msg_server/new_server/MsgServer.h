@@ -6,8 +6,8 @@
 #include <mutex>
 #include <atomic>
 
-#include "./net/TcpServer.h"
-#include "./net/EventLoop.h"
+#include "../net/TcpServer.h"
+#include "../net/EventLoop.h"
 
 class MsgServer final
 {

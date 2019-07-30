@@ -6,9 +6,6 @@
 #include "../base/AsyncLog.h"
 #include "../base/Singleton.h"
 #include "../net/ProtocolStream.h"
-#include "../zlib1.2.11/ZlibUtil.h"
-#include "ChatServer.h"
-#include "Msg.h"
 
 TcpSession::TcpSession(const std::weak_ptr<TcpConnection>& tmpconn) 
 : tmpConn_(tmpconn)
@@ -57,15 +54,24 @@ void TcpSession::SendPackage(const char* p_pSrcBuf, int32_t p_nLength)
 		return;
 	}
 
-	std::string strSrcBuf(p_pSrcBuf, p_nLength);
-	std::string strDestBuf;
-	if (!ZlibUtil::CompressBuf(strSrcBuf, strDestBuf))
+	std::string strPackageData(p_pSrcBuf, p_nLength);
+	if (tmpConn_.expired())
 	{
-		LOGE("compress buf error");
+		//FIXME: 出现这种问题需要排查
+		LOGE("Tcp connection is destroyed , but why TcpSession is still alive ?");
 		return;
 	}
 
-	std::string strPackageData;
-	
-	//TODO: 增加与TeamTalk相匹配的发包逻辑
+	std::shared_ptr<TcpConnection> conn = tmpConn_.lock();
+	if (conn)
+	{
+// 		if (Singleton<MsgServer>::Instance().IsLogPackageBinaryEnabled())
+// 		{
+// 			size_t length = strPackageData.length();
+// 			LOGI("Send data, package length: %d", length);
+// 			//LOG_DEBUG_BIN((unsigned char*)strPackageData.c_str(), length);
+// 		}
+
+		conn->send(strPackageData);
+	}
 }

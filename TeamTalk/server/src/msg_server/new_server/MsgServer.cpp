@@ -6,7 +6,7 @@
  */
 #include "MsgServer.h"
 
-#include "./base/AsyncLog.h"
+#include "../base/AsyncLog.h"
 
 MsgServer::MsgServer()
 {
@@ -44,5 +44,5 @@ void MsgServer::OnConnection(std::shared_ptr<TcpConnection> conn)
 void MsgServer::OnClose(std::shared_ptr<TcpConnection> conn)
 {
 	//判断是否有用户下线
-	//TODO: 增加离线回话处理
+	//TODO: 增加离线会话处理
 }

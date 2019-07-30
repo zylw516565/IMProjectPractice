@@ -1,5 +1,7 @@
 *.o
 *.cmake
+*.sdf
+*.opensdf
 
 #Ignore files built by CMake
 CMakeLists.txt.user

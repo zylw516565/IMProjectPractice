@@ -78,4 +78,5 @@ namespace net
         TcpConnectionPtr connection_; // @GuardedBy mutex_
     };
 
+	typedef std::shared_ptr<TcpClient> TcpClientPtr;
 }

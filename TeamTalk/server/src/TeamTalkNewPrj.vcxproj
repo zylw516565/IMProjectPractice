@@ -138,6 +138,8 @@
     <ClCompile Include="msfs\main.cpp" />
     <ClCompile Include="msfs\StringUtils.cpp" />
     <ClCompile Include="msg_server\AttachData.cpp" />
+    <ClCompile Include="msg_server\ChatFileHandler.cpp" />
+    <ClCompile Include="msg_server\ChatSession.cpp" />
     <ClCompile Include="msg_server\DBServConn.cpp" />
     <ClCompile Include="msg_server\FileHandler.cpp" />
     <ClCompile Include="msg_server\FileServConn.cpp" />
@@ -146,9 +148,34 @@
     <ClCompile Include="msg_server\jsonxx.cpp" />
     <ClCompile Include="msg_server\LoginServConn.cpp" />
     <ClCompile Include="msg_server\MsgConn.cpp" />
+    <ClCompile Include="msg_server\MsgServer.cpp" />
     <ClCompile Include="msg_server\msg_server.cpp" />
+    <ClCompile Include="msg_server\new_server\ChatFileHandler.cpp" />
+    <ClCompile Include="msg_server\new_server\ChatSession.cpp" />
+    <ClCompile Include="msg_server\new_server\MsgServer.cpp" />
+    <ClCompile Include="msg_server\new_server\TcpSession.cpp" />
+    <ClCompile Include="msg_server\new_server\UserGroupChat.cpp" />
     <ClCompile Include="msg_server\PushServConn.cpp" />
     <ClCompile Include="msg_server\RouteServConn.cpp" />
+    <ClCompile Include="msg_server\TcpSession.cpp" />
+    <ClCompile Include="msg_server\UserGroupChat.cpp" />
+    <ClCompile Include="msg_server\zlib1.2.11\adler32.c" />
+    <ClCompile Include="msg_server\zlib1.2.11\compress.c" />
+    <ClCompile Include="msg_server\zlib1.2.11\crc32.c" />
+    <ClCompile Include="msg_server\zlib1.2.11\deflate.c" />
+    <ClCompile Include="msg_server\zlib1.2.11\gzclose.c" />
+    <ClCompile Include="msg_server\zlib1.2.11\gzlib.c" />
+    <ClCompile Include="msg_server\zlib1.2.11\gzread.c" />
+    <ClCompile Include="msg_server\zlib1.2.11\gzwrite.c" />
+    <ClCompile Include="msg_server\zlib1.2.11\infback.c" />
+    <ClCompile Include="msg_server\zlib1.2.11\inffast.c" />
+    <ClCompile Include="msg_server\zlib1.2.11\inflate.c" />
+    <ClCompile Include="msg_server\zlib1.2.11\inftrees.c" />
+    <ClCompile Include="msg_server\zlib1.2.11\trees.c" />
+    <ClCompile Include="msg_server\zlib1.2.11\uncompr.c" />
+    <ClCompile Include="msg_server\zlib1.2.11\zlibdemo.c" />
+    <ClCompile Include="msg_server\zlib1.2.11\ZlibUtil.cpp" />
+    <ClCompile Include="msg_server\zlib1.2.11\zutil.c" />
     <ClCompile Include="push_server\apns_client.cpp" />
     <ClCompile Include="push_server\apns_client_handler.cpp" />
     <ClCompile Include="push_server\apns_feedback_handler.cpp" />
@@ -350,6 +377,8 @@
     <ClInclude Include="msfs\Portable.h" />
     <ClInclude Include="msfs\StringUtils.h" />
     <ClInclude Include="msg_server\AttachData.h" />
+    <ClInclude Include="msg_server\ChatFileHandler.h" />
+    <ClInclude Include="msg_server\ChatSession.h" />
     <ClInclude Include="msg_server\DBServConn.h" />
     <ClInclude Include="msg_server\FileHandler.h" />
     <ClInclude Include="msg_server\FileServConn.h" />
@@ -357,9 +386,30 @@
     <ClInclude Include="msg_server\ImUser.h" />
     <ClInclude Include="msg_server\jsonxx.h" />
     <ClInclude Include="msg_server\LoginServConn.h" />
+    <ClInclude Include="msg_server\Msg.h" />
     <ClInclude Include="msg_server\MsgConn.h" />
+    <ClInclude Include="msg_server\MsgServer.h" />
+    <ClInclude Include="msg_server\new_server\ChatFileHandler.h" />
+    <ClInclude Include="msg_server\new_server\ChatSession.h" />
+    <ClInclude Include="msg_server\new_server\MsgServer.h" />
+    <ClInclude Include="msg_server\new_server\TcpSession.h" />
+    <ClInclude Include="msg_server\new_server\UserGroupChat.h" />
     <ClInclude Include="msg_server\PushServConn.h" />
     <ClInclude Include="msg_server\RouteServConn.h" />
+    <ClInclude Include="msg_server\TcpSession.h" />
+    <ClInclude Include="msg_server\UserGroupChat.h" />
+    <ClInclude Include="msg_server\zlib1.2.11\crc32.h" />
+    <ClInclude Include="msg_server\zlib1.2.11\deflate.h" />
+    <ClInclude Include="msg_server\zlib1.2.11\gzguts.h" />
+    <ClInclude Include="msg_server\zlib1.2.11\inffast.h" />
+    <ClInclude Include="msg_server\zlib1.2.11\inffixed.h" />
+    <ClInclude Include="msg_server\zlib1.2.11\inflate.h" />
+    <ClInclude Include="msg_server\zlib1.2.11\inftrees.h" />
+    <ClInclude Include="msg_server\zlib1.2.11\trees.h" />
+    <ClInclude Include="msg_server\zlib1.2.11\zconf.h" />
+    <ClInclude Include="msg_server\zlib1.2.11\zlib.h" />
+    <ClInclude Include="msg_server\zlib1.2.11\ZlibUtil.h" />
+    <ClInclude Include="msg_server\zlib1.2.11\zutil.h" />
     <ClInclude Include="protobuf\include\google\protobuf\compiler\code_generator.h" />
     <ClInclude Include="protobuf\include\google\protobuf\compiler\command_line_interface.h" />
     <ClInclude Include="protobuf\include\google\protobuf\compiler\cpp\cpp_generator.h" />
@@ -462,6 +512,14 @@
     <None Include="base\jsoncpp\json_internalarray.inl" />
     <None Include="base\jsoncpp\json_internalmap.inl" />
     <None Include="base\jsoncpp\json_valueiterator.inl" />
+    <None Include="msg_server\log4cxx.properties" />
+    <None Include="msg_server\msgserver.conf" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="msg_server\zlib1.2.11\文件概览.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="msg_server\policy.xml" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
