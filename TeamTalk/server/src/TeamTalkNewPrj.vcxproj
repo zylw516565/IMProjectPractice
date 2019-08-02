@@ -176,8 +176,10 @@
     <ClCompile Include="msg_server\net\TimerQueue.cpp" />
     <ClCompile Include="msg_server\new_server\ChatFileHandler.cpp" />
     <ClCompile Include="msg_server\new_server\ChatSession.cpp" />
-    <ClCompile Include="msg_server\new_server\DBServerSession.cpp" />
+    <ClCompile Include="msg_server\new_server\DBServerClient.cpp" />
+    <ClCompile Include="msg_server\new_server\DBServerConnection.cpp" />
     <ClCompile Include="msg_server\new_server\MsgServer.cpp" />
+    <ClCompile Include="msg_server\new_server\ServerBaseClient.cpp" />
     <ClCompile Include="msg_server\new_server\TcpSession.cpp" />
     <ClCompile Include="msg_server\new_server\UserGroupChat.cpp" />
     <ClCompile Include="msg_server\PushServConn.cpp" />
@@ -445,8 +447,10 @@
     <ClInclude Include="msg_server\net\TimerQueue.h" />
     <ClInclude Include="msg_server\new_server\ChatFileHandler.h" />
     <ClInclude Include="msg_server\new_server\ChatSession.h" />
-    <ClInclude Include="msg_server\new_server\DBServerSession.h" />
+    <ClInclude Include="msg_server\new_server\DBServerClient.h" />
+    <ClInclude Include="msg_server\new_server\DBServerConnection.h" />
     <ClInclude Include="msg_server\new_server\MsgServer.h" />
+    <ClInclude Include="msg_server\new_server\ServerBaseClient.h" />
     <ClInclude Include="msg_server\new_server\TcpSession.h" />
     <ClInclude Include="msg_server\new_server\UserGroupChat.h" />
     <ClInclude Include="msg_server\PushServConn.h" />

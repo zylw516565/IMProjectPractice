@@ -500,9 +500,6 @@
     <ClCompile Include="msg_server\new_server\UserGroupChat.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="msg_server\new_server\DBServerSession.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="msg_server\base\AsyncLog.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -573,6 +570,15 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="msg_server\net\TimerQueue.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="msg_server\new_server\DBServerConnection.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="msg_server\new_server\ServerBaseClient.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="msg_server\new_server\DBServerClient.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -1471,9 +1477,6 @@
     <ClInclude Include="msg_server\Msg.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="msg_server\new_server\DBServerSession.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="msg_server\base\AsyncLog.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -1559,6 +1562,15 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="msg_server\net\TimerQueue.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="msg_server\new_server\DBServerConnection.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="msg_server\new_server\ServerBaseClient.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="msg_server\new_server\DBServerClient.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
