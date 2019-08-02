@@ -1,5 +1,8 @@
 #pragma once
 
+#include "ChatSession.h"
+#include "../base/Singleton.h"
+
 class ChatSession;
 
 typedef std::weak_ptr<ChatSession> ChatSessionPtr;
@@ -12,6 +15,10 @@ public:
 
 	UserGroupChat(const UserGroupChat& rhs) = delete;
 	UserGroupChat& operator=(const UserGroupChat& rhs) = delete;
+
+public:
+
+	static UserGroupChat& getInstance() { return Singleton<UserGroupChat>::Instance(); }
 
 	void HandleClientGroupNormalRequest(const IMPduPtr& pPdu, const ChatSessionPtr& pFromConn);
 	void HandleGroupNormalResponse(const IMPduPtr& pPdu);

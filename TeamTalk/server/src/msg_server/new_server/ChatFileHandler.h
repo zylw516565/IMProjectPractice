@@ -1,5 +1,7 @@
 #pragma once
 
+#include "../base/Singleton.h"
+
 class ChatSession;
 typedef std::weak_ptr<ChatSession> ChatSessionPtr;
 
@@ -11,6 +13,10 @@ public:
 
 	ChatFileHandler(const ChatFileHandler& rhs) = delete;
 	ChatFileHandler& operator=(const ChatFileHandler& rhs) = delete;
+
+public:
+
+	static ChatFileHandler& getInstance() { return Singleton<ChatFileHandler>::Instance(); }
 
 	void HandleClientFileRequest(const ChatSessionPtr& pMsgConn, const IMPduPtr& pPdu);
 	void HandleClientFileHasOfflineReq(const ChatSessionPtr& pMsgConn, const IMPduPtr& pPdu);

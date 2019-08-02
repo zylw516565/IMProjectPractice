@@ -33,7 +33,7 @@ void MsgServer::OnConnection(std::shared_ptr<TcpConnection> conn)
 		conn->setMessageCallback(std::bind(&ChatSession::OnRead, spSession.get(), std::placeholders::_1, std::placeholders::_2, std::placeholders::_3));
 
 		std::lock_guard<std::mutex> guard(m_SessionMutex);
-		m_SessionList.push_back(conn);
+		m_SessionList.push_back(spSession);
 	}
 	else
 	{

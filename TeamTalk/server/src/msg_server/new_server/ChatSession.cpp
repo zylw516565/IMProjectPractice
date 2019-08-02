@@ -19,8 +19,8 @@ uint32_t asInt32(uchar_t *buf)
 	return data;
 }
 
-ChatSession::ChatSession(const std::shared_ptr<TcpConnection>& conn, int sessionid) :
-TcpSession(conn), 
+ChatSession::ChatSession(const std::shared_ptr<TcpConnection>& conn, int sessionid) 
+:TcpSession(conn), 
 m_nSessionId(sessionid),
 {
 }
@@ -39,7 +39,7 @@ void ChatSession::OnRead(const std::shared_ptr<TcpConnection>& conn, Buffer* pBu
 	if (nullptr == conn.get() || NULL == pBuffer)
 		return;
 
-	if (pBuffer->readableBytes() < 4)
+	if (pBuffer->readableBytes() < sizeof(int32_t))
 	{
 		LOGE("recv data error, data is incomplete. data len = %d", pBuffer->readableBytes());
 		return;
@@ -149,33 +149,33 @@ void ChatSession::handleCommand(const IMPduPtr& pPdu)
 
 		// for group process
 	case CID_GROUP_NORMAL_LIST_REQUEST:
-		Singleton<UserGroupChat>::Instance().HandleClientGroupNormalRequest(pPdu, this);
+		UserGroupChat.getInstance().HandleClientGroupNormalRequest(pPdu, this);
 		break;
 	case CID_GROUP_INFO_REQUEST:
-		Singleton<UserGroupChat>::Instance().HandleClientGroupInfoRequest(pPdu, this);
+		UserGroupChat.getInstance().HandleClientGroupInfoRequest(pPdu, this);
 		break;
 	case CID_GROUP_CREATE_REQUEST:
-		Singleton<UserGroupChat>::Instance().HandleClientGroupCreateRequest(pPdu, this);
+		UserGroupChat.getInstance().HandleClientGroupCreateRequest(pPdu, this);
 		break;
 	case CID_GROUP_CHANGE_MEMBER_REQUEST:
-		Singleton<UserGroupChat>::Instance().HandleClientGroupChangeMemberRequest(pPdu, this);
+		UserGroupChat.getInstance().HandleClientGroupChangeMemberRequest(pPdu, this);
 		break;
 	case CID_GROUP_SHIELD_GROUP_REQUEST:
-		Singleton<UserGroupChat>::Instance().HandleClientGroupShieldGroupRequest(pPdu, this);
+		UserGroupChat.getInstance().HandleClientGroupShieldGroupRequest(pPdu, this);
 		break;
 
 		// for file process
 	case CID_FILE_REQUEST:
-		Singleton<ChatFileHandler>::Instance().HandleClientFileRequest(this, pPdu);
+		ChatFileHandler.getInstance().HandleClientFileRequest(this, pPdu);
 		break;
 	case CID_FILE_HAS_OFFLINE_REQ:
-		Singleton<ChatFileHandler>::Instance().HandleClientFileHasOfflineReq(this, pPdu);
+		ChatFileHandler.getInstance().HandleClientFileHasOfflineReq(this, pPdu);
 		break;
 	case CID_FILE_ADD_OFFLINE_REQ:
-		Singleton<ChatFileHandler>::Instance().HandleClientFileAddOfflineReq(this, pPdu);
+		ChatFileHandler.getInstance().HandleClientFileAddOfflineReq(this, pPdu);
 		break;
 	case CID_FILE_DEL_OFFLINE_REQ:
-		Singleton<ChatFileHandler>::Instance().HandleClientFileDelOfflineReq(this, pPdu);
+		ChatFileHandler.getInstance().HandleClientFileDelOfflineReq(this, pPdu);
 		break;
 	default:
 		log("wrong msg, cmd id=%d, user id=%u. ", pPdu->GetCommandId(), GetUserId());
