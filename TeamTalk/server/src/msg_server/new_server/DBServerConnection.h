@@ -1,13 +1,10 @@
 #ifndef __DBSERVER_CONNECTION_H__
 #define __DBSERVER_CONNECTION_H__
 
-#include "TcpClient.h"
 #include "DBServerClient.h"
 #include "../base/Singleton.h"
 
-#include <memory>
 #include <atomic>
-#include <map>
 #include <list>
 
 
@@ -30,9 +27,7 @@ public:
 
 private:
 
-private:
-
-	std::mutex                       m_ClientMutex;
+	std::mutex                                 m_ClientMutex;
 	std::list<DBServerClientPtr> m_DBServerClientList;				//TCP连接列表
 
 	std::atomic_int               m_nSessionID{};
