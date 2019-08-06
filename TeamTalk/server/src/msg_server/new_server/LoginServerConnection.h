@@ -29,7 +29,7 @@ public:
 private:
 
 	std::mutex                                                m_ClientMutex;
-	std::list<LoginServerConnectionPtr> m_LoginServerConnectionList;				//TCP连接列表
+	std::list<LoginServerConnectionPtr> m_LoginServerConnectionList;				//TCP杩炴帴鍒楄〃
 
 	std::atomic_int               m_nSessionID{};
 };

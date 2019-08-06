@@ -3,6 +3,9 @@
 *.sdf
 *.opensdf
 
+#Ignore files built by SourceInsight
+cache
+
 #Ignore files built by CMake
 CMakeLists.txt.user
 CMakeCache.txt

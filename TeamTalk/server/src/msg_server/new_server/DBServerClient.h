@@ -18,7 +18,7 @@ public:
 	void onConnection(const TcpConnectionPtr& conn);
 	void onMessage(const TcpConnectionPtr& conn, Buffer* buffer, Timestamp receiveTime);
 	void onWriteComplete(const TcpConnectionPtr& conn);	
-	void onHeartBeat();    //Ã¿ÌõTCPÁ¬½Ó±£³Ö×Ô¼ºµÄĞÄÌø
+	void onHeartBeat();    //æ¯æ¡TCPè¿æ¥ä¿æŒè‡ªå·±çš„å¿ƒè·³
   
 private:
 

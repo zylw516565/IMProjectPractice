@@ -10,8 +10,8 @@ void LoginServerClient::onConnection(const TcpConnectionPtr& conn)
 	{
 		LOGD("connect server: %s success", conn->peerAddress().c_str());
 
-		//Á¬½Ólogin_server³É¹¦ÒÔºó,¸æËßlogin_server×Ô¼ºµÄipµØÖ·¡¢¶Ë¿ÚºÅ
-		//ºÍµ±Ç°µÇÂ¼µÄÓÃ»§ÊıÁ¿ºÍ¿ÉÈİÄÉµÄ×î´óÓÃ»§ÊıÁ¿
+		//è¿æ¥login_serveræˆåŠŸä»¥å,å‘Šè¯‰login_serverè‡ªå·±çš„ipåœ°å€ã€ç«¯å£å·
+		//å’Œå½“å‰ç™»å½•çš„ç”¨æˆ·æ•°é‡å’Œå¯å®¹çº³çš„æœ€å¤§ç”¨æˆ·æ•°é‡
 		list<user_conn_t> user_conn_list;
 		CImUserManager::GetInstance()->GetUserConnCnt(&user_conn_list, cur_conn_cnt);
 		char hostname[256] = { 0 };

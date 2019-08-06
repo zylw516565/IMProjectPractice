@@ -178,6 +178,7 @@
     <ClCompile Include="msg_server\new_server\ChatSession.cpp" />
     <ClCompile Include="msg_server\new_server\DBServerClient.cpp" />
     <ClCompile Include="msg_server\new_server\DBServerConnection.cpp" />
+    <ClCompile Include="msg_server\new_server\LoginServerClient.cpp" />
     <ClCompile Include="msg_server\new_server\MsgServer.cpp" />
     <ClCompile Include="msg_server\new_server\ServerBaseClient.cpp" />
     <ClCompile Include="msg_server\new_server\TcpSession.cpp" />
@@ -449,6 +450,7 @@
     <ClInclude Include="msg_server\new_server\ChatSession.h" />
     <ClInclude Include="msg_server\new_server\DBServerClient.h" />
     <ClInclude Include="msg_server\new_server\DBServerConnection.h" />
+    <ClInclude Include="msg_server\new_server\LoginServerClient.h" />
     <ClInclude Include="msg_server\new_server\MsgServer.h" />
     <ClInclude Include="msg_server\new_server\ServerBaseClient.h" />
     <ClInclude Include="msg_server\new_server\TcpSession.h" />

@@ -581,6 +581,9 @@
     <ClCompile Include="msg_server\new_server\DBServerClient.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="msg_server\new_server\LoginServerClient.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="base\atomic.h">
@@ -1571,6 +1574,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="msg_server\new_server\DBServerClient.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="msg_server\new_server\LoginServerClient.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -45,7 +45,7 @@ void ChatSession::OnRead(const std::shared_ptr<TcpConnection>& conn, Buffer* pBu
 		return;
 	}
 
-	//ÊÕµ½µÄÊý¾Ý²»¹»Ò»¸öÍêÕûµÄ°ü
+	//æ”¶åˆ°çš„æ•°æ®ä¸å¤Ÿä¸€ä¸ªå®Œæ•´çš„åŒ…
 	int32_t nPkgLen = pBuffer->readInt32();
 	if (pBuffer->readableBytes() < nPkgLen)
 	{
@@ -184,7 +184,7 @@ void ChatSession::handleCommand(const IMPduPtr& pPdu)
 }
 
 void ChatSession::_HandleHeartBeat(const IMPduPtr& pPdu)
-{//ÏìÓ¦
+{//å“åº”
 	Send(pPdu->GetBuffer(), pPdu->GetLength());
 }
 
@@ -203,15 +203,15 @@ void ChatSession::_HandleLoginRequest(const IMPduPtr& pPdu)
 	CDBServConn* pDbConn = get_db_serv_conn_for_login();
 	if (!pDbConn) {
 		result = IM::BaseDefine::REFUSE_REASON_NO_DB_SERVER;
-		result_string = "·þÎñ¶ËÒì³£";
+		result_string = "æœåŠ¡ç«¯å¼‚å¸¸";
 	}
 	else if (!is_login_server_available()) {
 		result = IM::BaseDefine::REFUSE_REASON_NO_LOGIN_SERVER;
-		result_string = "·þÎñ¶ËÒì³£";
+		result_string = "æœåŠ¡ç«¯å¼‚å¸¸";
 	}
 	else if (!is_route_server_available()) {
 		result = IM::BaseDefine::REFUSE_REASON_NO_ROUTE_SERVER;
-		result_string = "·þÎñ¶ËÒì³£";
+		result_string = "æœåŠ¡ç«¯å¼‚å¸¸";
 	}
 
 	if (result) {
@@ -231,7 +231,7 @@ void ChatSession::_HandleLoginRequest(const IMPduPtr& pPdu)
 
 	IM::Login::IMLoginReq msg;
 	CHECK_PB_PARSE_MSG(msg.ParseFromArray(pPdu->GetBodyData(), pPdu->GetBodyLength()));
-	//¼ÙÈçÊÇºº×Ö£¬Ôò×ª³ÉÆ´Òô
+	//å‡å¦‚æ˜¯æ±‰å­—ï¼Œåˆ™è½¬æˆæ‹¼éŸ³
 	m_login_name = msg.user_name();
 	string password = msg.password();
 	uint32_t online_status = msg.online_status();
@@ -347,7 +347,7 @@ void ChatSession::_HandleClientRecentContactSessionRequest(const IMPduPtr& pPdu)
 	log("HandleClientRecentContactSessionRequest, user_id=%u, latest_update_time=%u. ", GetUserId(), msg.latest_update_time());
 
 	msg.set_user_id(GetUserId());
-	// ÇëÇó×î½üÁªÏµ»á»°ÁÐ±í
+	// è¯·æ±‚æœ€è¿‘è”ç³»ä¼šè¯åˆ—è¡¨
 	CDbAttachData attach_data(ATTACH_TYPE_HANDLE, m_handle, 0);
 	msg.set_attach_data(attach_data.GetBuffer(), attach_data.GetLength());
 	pPdu->SetPBMsg(&msg);

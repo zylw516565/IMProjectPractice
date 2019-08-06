@@ -28,7 +28,7 @@ public:
 private:
 
 	std::mutex                                 m_ClientMutex;
-	std::list<DBServerClientPtr> m_DBServerClientList;				//TCP连接列表
+	std::list<DBServerClientPtr> m_DBServerClientList;				//TCP杩炴帴鍒楄〃
 
 	std::atomic_int               m_nSessionID{};
 };

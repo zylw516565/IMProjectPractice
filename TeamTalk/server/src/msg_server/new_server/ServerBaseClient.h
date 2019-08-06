@@ -26,7 +26,7 @@ protected:
 			return;
 		}
 
-		//ÊÕµ½µÄÊı¾İ²»¹»Ò»¸öÍêÕûµÄ°ü
+		//æ”¶åˆ°çš„æ•°æ®ä¸å¤Ÿä¸€ä¸ªå®Œæ•´çš„åŒ…
 		int32_t nPkgLen = pBuffer->readInt32();
 		if (pBuffer->readableBytes() < nPkgLen)
 		{
@@ -38,7 +38,7 @@ protected:
 		pIMPdu->ReadPduHeader(pBuffer->peek(), IM_PDU_HEADER_LEN);
 	}
 
-	//Ã¿ÌõTCPÁ¬½Ó±£³Ö×Ô¼ºµÄĞÄÌø
+	//æ¯æ¡TCPè¿æ¥ä¿æŒè‡ªå·±çš„å¿ƒè·³
 	 void sendHeartBeat()
 	 {
 		 IM::Other::IMHeartBeat msg;

@@ -14,14 +14,14 @@ struct OnlineUserInfo
     std::string username;
     std::string nickname;
     std::string password;
-    int32_t     clienttype;     //¿Í»§¶ËÀàĞÍ, 0Î´Öª, pc=1, android/ios=2
-    int32_t     status;         //ÔÚÏß×´Ì¬ 0ÀëÏß 1ÔÚÏß 2Ã¦Âµ 3Àë¿ª 4ÒşÉí
+    int32_t     clienttype;     //å®¢æˆ·ç«¯ç±»å‹, 0æœªçŸ¥, pc=1, android/ios=2
+    int32_t     status;         //åœ¨çº¿çŠ¶æ€ 0ç¦»çº¿ 1åœ¨çº¿ 2å¿™ç¢Œ 3ç¦»å¼€ 4éšèº«
 };
 
 typedef  std::shared_ptr<CImPdu> IMPduPtr;
 
 /**
- * ÁÄÌì»á»°Àà
+ * èŠå¤©ä¼šè¯ç±»
  */
 class ChatSession : public TcpSession
 {
@@ -32,7 +32,7 @@ public:
     ChatSession(const ChatSession& rhs) = delete;
     ChatSession& operator =(const ChatSession& rhs) = delete;
 
-    //ÓĞÊı¾İ¿É¶Á, »á±»¶à¸ö¹¤×÷loopµ÷ÓÃ
+    //æœ‰æ•°æ®å¯è¯», ä¼šè¢«å¤šä¸ªå·¥ä½œloopè°ƒç”¨
     void OnRead(const std::shared_ptr<TcpConnection>& conn, Buffer* pBuffer, Timestamp receivTime);
 
 	void SetOpen() { m_bOpen = true; }
@@ -80,12 +80,12 @@ private:
 
 private:
 	int32_t       m_nSessionId;                 //session id
-	std::string          m_login_name;        //µÇÂ¼ÃûÆ´Òô
+	std::string          m_login_name;        //ç™»å½•åæ‹¼éŸ³
 	uint32_t        m_user_id;
 
 	bool			m_bOpen;	// only DB validate passed will be set to true;
 	bool            m_bKickOff;
 };
 
-//TODO:·Å¿ª×¢ÊÍ?
+//TODO:æ”¾å¼€æ³¨é‡Š?
 //typedef std::weak_ptr<ChatSession> ChatSessionPtr;

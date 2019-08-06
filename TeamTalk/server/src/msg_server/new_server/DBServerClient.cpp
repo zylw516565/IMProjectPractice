@@ -601,7 +601,7 @@ void DBServerClient::_HandleGetDeviceTokenResponse(const IMPduPtr& pPdu)
 		string device_token = user_token.token();
 		uint32_t push_cnt = user_token.push_count();
 		uint32_t client_type = user_token.user_type();
-		//×Ô¼º·¢µÃÏûÏ¢²»¸ø×Ô¼º·¢ÍÆËÍ
+		//è‡ªå·±å‘å¾—æ¶ˆæ¯ä¸ç»™è‡ªå·±å‘æŽ¨é€
 		if (from_id == user_id) {
 			continue;
 		}
@@ -619,7 +619,7 @@ void DBServerClient::_HandleGetDeviceTokenResponse(const IMPduPtr& pPdu)
 			user_token_tmp->set_user_type((IM::BaseDefine::ClientType)client_type);
 			user_token_tmp->set_token(device_token);
 			user_token_tmp->set_push_count(push_cnt);
-			//pc clientµÇÂ¼£¬ÔòÎªÎð´òÈÅÊ½ÍÆËÍ
+			//pc clientç™»å½•ï¼Œåˆ™ä¸ºå‹¿æ‰“æ‰°å¼æŽ¨é€
 			if (pUser->GetPCLoginStatus() == IM_PC_LOGIN_STATUS_ON)
 			{
 				user_token_tmp->set_push_type(IM_PUSH_TYPE_SILENT);

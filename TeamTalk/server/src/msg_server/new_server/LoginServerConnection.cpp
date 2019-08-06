@@ -10,7 +10,7 @@ bool LoginServerConnection::initConnect(EventLoop* loop, const char* ip, short p
 		return false;
 	}
 
-	//TODO:  Ôö¼Ó¶àÁ¬½Ó
+	//TODO:  å¢åŠ å¤šè¿æ¥
 	for (;;)
 	{
 		InetAddress addr(ip, port);
@@ -18,11 +18,11 @@ bool LoginServerConnection::initConnect(EventLoop* loop, const char* ip, short p
 		pLoginServerClient->setConnectionCallback(std::bind(&LoginServerClient::onConnection, this, std::placeholders::_1));
 		pLoginServerClient->setMessageCallback(std::bind(&LoginServerClient::onMessage, this, std::placeholders::_1, std::placeholders::_2, std::placeholders::_3));
 		pLoginServerClient->setWriteCompleteCallback();
-		pLoginServerClient->enableRetry();    //¿ªÆôÁ¬½Ó¶Ï¿ªºóÖØÊÔ
+		pLoginServerClient->enableRetry();    //å¼€å¯è¿æ¥æ–­å¼€åé‡è¯•
 
 		{
 			std::lock_guard<std::mutex> guard(m_ClientMutex);
-			pLoginServerClient->connect();             //´Ë´¦¿ªÊ¼Á¬½Ó²Ù×÷±ØĞë·Åµ½ËøÄÚ,±£Ö¤Á¬½Ó»Øµ÷ÔÚ¼ÓÈëlistÖ®ºó´¥·¢
+			pLoginServerClient->connect();             //æ­¤å¤„å¼€å§‹è¿æ¥æ“ä½œå¿…é¡»æ”¾åˆ°é”å†…,ä¿è¯è¿æ¥å›è°ƒåœ¨åŠ å…¥listä¹‹åè§¦å‘
 			m_LoginServerConnectionList.push_back(pLoginServerClient);
 		}
 

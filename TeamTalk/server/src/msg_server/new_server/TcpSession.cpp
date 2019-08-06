@@ -57,7 +57,7 @@ void TcpSession::SendPackage(const char* p_pSrcBuf, int32_t p_nLength)
 	std::string strPackageData(p_pSrcBuf, p_nLength);
 	if (tmpConn_.expired())
 	{
-		//FIXME: ³öÏÖÕâÖÖÎÊÌâĞèÒªÅÅ²é
+		//FIXME: å‡ºç°è¿™ç§é—®é¢˜éœ€è¦æ’æŸ¥
 		LOGE("Tcp connection is destroyed , but why TcpSession is still alive ?");
 		return;
 	}

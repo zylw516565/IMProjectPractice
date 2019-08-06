@@ -12,7 +12,7 @@ bool DBServerConnection::initConnect(EventLoop* loop, const char* ip, short port
 		return false;
 	}
 
-	//TODO:  Ôö¼Ó¶àÁ¬½Ó
+	//TODO:  å¢åŠ å¤šè¿æ¥
 	for (;;)
 	{
 		InetAddress addr(ip, port);
@@ -20,11 +20,11 @@ bool DBServerConnection::initConnect(EventLoop* loop, const char* ip, short port
 		pDBServerClient->setConnectionCallback(std::bind(&DBServerClient::onConnection, this, std::placeholders::_1));
 		pDBServerClient->setMessageCallback(std::bind(&DBServerClient::onMessage, this, std::placeholders::_1, std::placeholders::_2, std::placeholders::_3));
 		pDBServerClient->setWriteCompleteCallback();
-		pDBServerClient->enableRetry();    //¿ªÆôÁ¬½Ó¶Ï¿ªºóÖØÊÔ
+		pDBServerClient->enableRetry();    //å¼€å¯è¿æ¥æ–­å¼€åé‡è¯•
 
 		{
 			std::lock_guard<std::mutex> guard(m_ClientMutex);
-			pDBServerClient->connect();             //´Ë´¦¿ªÊ¼Á¬½Ó²Ù×÷±ØĞë·Åµ½ËøÄÚ,±£Ö¤Á¬½Ó»Øµ÷ÔÚ¼ÓÈëlistÖ®ºó´¥·¢
+			pDBServerClient->connect();             //æ­¤å¤„å¼€å§‹è¿æ¥æ“ä½œå¿…é¡»æ”¾åˆ°é”å†…,ä¿è¯è¿æ¥å›è°ƒåœ¨åŠ å…¥listä¹‹åè§¦å‘
 			m_DBServerClientList.push_back(pDBServerClient);
 			//m_ClientConnMap.insert(TcpClientConnMap::value_type(pDBServerClient->connection(), pDBServerClient));
 		}
