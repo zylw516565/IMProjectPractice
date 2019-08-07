@@ -4,19 +4,18 @@
 
 
 
-bool DBServerConnection::initConnect(EventLoop* loop, const char* ip, short port, int64_t p_nTimerInterval)
+bool DBServerConnection::initConnect(EventLoop* loop, const std::vector<InetAddress>& p_NetAddrList, int64_t p_nTimerInterval)
 {
-	if (NULL == ip || 0 == port || NULL == loop)
+	if (p_NetAddrList.empty() || NULL == loop)
 	{
-		LOGE("ip or loop is NULL !!! ip:%x, loop: %x", ip, loop);
+		LOGE("p_NetAddrList is empty !!! loop: %x", loop);
 		return false;
 	}
 
 	//TODO:  增加多连接
-	for (;;)
-	{
-		InetAddress addr(ip, port);
-		DBServerClientPtr pDBServerClient(new DBServerClient(loop, addr, "DBServerConn"));
+	for (int nIndex = 0; nIndex <= p_NetAddrList.size(); ++nIndex)
+	{		
+		DBServerClientPtr pDBServerClient(new DBServerClient(loop, p_NetAddrList[nIndex], "DBServerConn" + std::to_string(nIndex)));
 		pDBServerClient->setConnectionCallback(std::bind(&DBServerClient::onConnection, this, std::placeholders::_1));
 		pDBServerClient->setMessageCallback(std::bind(&DBServerClient::onMessage, this, std::placeholders::_1, std::placeholders::_2, std::placeholders::_3));
 		pDBServerClient->setWriteCompleteCallback();

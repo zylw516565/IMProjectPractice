@@ -103,7 +103,7 @@ void DBServerClient::handleCommand(const IMPduPtr& pPdu)
 		_HandleGetDeviceTokenResponse(pPdu);
 		break;
 	case CID_OTHER_GET_SHIELD_RSP:
-		UserGroupChat.getInstance().HandleGroupGetShieldByGroupResponse(pPdu);
+		UserGroupChat::getInstance().HandleGroupGetShieldByGroupResponse(pPdu);
 		break;
 	case CID_OTHER_STOP_RECV_PACKET:
 		_HandleStopReceivePacket(pPdu);
@@ -111,19 +111,19 @@ void DBServerClient::handleCommand(const IMPduPtr& pPdu)
 
 		//group
 	case CID_GROUP_NORMAL_LIST_RESPONSE:
-		UserGroupChat.getInstance().HandleGroupNormalResponse(pPdu);
+		UserGroupChat::getInstance().HandleGroupNormalResponse(pPdu);
 		break;
 	case CID_GROUP_INFO_RESPONSE:
-		UserGroupChat.getInstance().HandleGroupInfoResponse(pPdu);
+		UserGroupChat::getInstance().HandleGroupInfoResponse(pPdu);
 		break;
 	case CID_GROUP_CREATE_RESPONSE:
-		UserGroupChat.getInstance().HandleGroupCreateResponse(pPdu);
+		UserGroupChat::getInstance().HandleGroupCreateResponse(pPdu);
 		break;
 	case CID_GROUP_CHANGE_MEMBER_RESPONSE:
-		UserGroupChat.getInstance().HandleGroupChangeMemberResponse(pPdu);
+		UserGroupChat::getInstance().HandleGroupChangeMemberResponse(pPdu);
 		break;
 	case CID_GROUP_SHIELD_GROUP_RESPONSE:
-		UserGroupChat.getInstance().HandleGroupShieldGroupResponse(pPdu);
+		UserGroupChat::getInstance().HandleGroupShieldGroupResponse(pPdu);
 		break;
 
 		//file

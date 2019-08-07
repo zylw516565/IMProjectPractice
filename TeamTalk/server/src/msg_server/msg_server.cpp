@@ -98,10 +98,13 @@ int main(int argc, char* argv[])
 		db_server_count2 = db_server_count * concurrent_db_conn_cnt;
 	}
 
+    std::vector<std::string> strNetAddrList;
 	serv_info_t* db_server_list2 = new serv_info_t [ db_server_count2];
 	for (uint32_t i = 0; i < db_server_count2; i++) {
 		db_server_list2[i].server_ip = db_server_list[i / concurrent_db_conn_cnt].server_ip.c_str();
 		db_server_list2[i].server_port = db_server_list[i / concurrent_db_conn_cnt].server_port;
+        std::string strNetAddr = db_server_list2[i].server_ip + ":" + db_server_list2[i].server_port;
+        strNetAddrList.pushback(strNetAddr);
 	}
 
 	if (!listen_ip || !str_listen_port || !ip_addr1) {

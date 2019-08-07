@@ -149,33 +149,33 @@ void ChatSession::handleCommand(const IMPduPtr& pPdu)
 
 		// for group process
 	case CID_GROUP_NORMAL_LIST_REQUEST:
-		UserGroupChat.getInstance().HandleClientGroupNormalRequest(pPdu, this);
+		UserGroupChat::getInstance().HandleClientGroupNormalRequest(pPdu, this);
 		break;
 	case CID_GROUP_INFO_REQUEST:
-		UserGroupChat.getInstance().HandleClientGroupInfoRequest(pPdu, this);
+		UserGroupChat::getInstance().HandleClientGroupInfoRequest(pPdu, this);
 		break;
 	case CID_GROUP_CREATE_REQUEST:
-		UserGroupChat.getInstance().HandleClientGroupCreateRequest(pPdu, this);
+		UserGroupChat::getInstance().HandleClientGroupCreateRequest(pPdu, this);
 		break;
 	case CID_GROUP_CHANGE_MEMBER_REQUEST:
-		UserGroupChat.getInstance().HandleClientGroupChangeMemberRequest(pPdu, this);
+		UserGroupChat::getInstance().HandleClientGroupChangeMemberRequest(pPdu, this);
 		break;
 	case CID_GROUP_SHIELD_GROUP_REQUEST:
-		UserGroupChat.getInstance().HandleClientGroupShieldGroupRequest(pPdu, this);
+		UserGroupChat::getInstance().HandleClientGroupShieldGroupRequest(pPdu, this);
 		break;
 
 		// for file process
 	case CID_FILE_REQUEST:
-		ChatFileHandler.getInstance().HandleClientFileRequest(this, pPdu);
+		ChatFileHandler::getInstance().HandleClientFileRequest(this, pPdu);
 		break;
 	case CID_FILE_HAS_OFFLINE_REQ:
-		ChatFileHandler.getInstance().HandleClientFileHasOfflineReq(this, pPdu);
+		ChatFileHandler::getInstance().HandleClientFileHasOfflineReq(this, pPdu);
 		break;
 	case CID_FILE_ADD_OFFLINE_REQ:
-		ChatFileHandler.getInstance().HandleClientFileAddOfflineReq(this, pPdu);
+		ChatFileHandler::getInstance().HandleClientFileAddOfflineReq(this, pPdu);
 		break;
 	case CID_FILE_DEL_OFFLINE_REQ:
-		ChatFileHandler.getInstance().HandleClientFileDelOfflineReq(this, pPdu);
+		ChatFileHandler::getInstance().HandleClientFileDelOfflineReq(this, pPdu);
 		break;
 	default:
 		log("wrong msg, cmd id=%d, user id=%u. ", pPdu->GetCommandId(), GetUserId());
