@@ -2,7 +2,7 @@
 #define __FILE_SERVER_CONNECTION_H__
 
 
-#include "LoginServerClient.h"
+#include "FileServerClient.h"
 #include "../base/Singleton.h"
 
 #include <atomic>
@@ -29,10 +29,10 @@ public:
 
 private:
 
-	std::mutex                                                m_ClientMutex;
-	std::list<FileServerConnectionPtr> m_FileServerConnectionList;				//TCP连接列表
+	std::mutex                             m_ClientMutex;
+	std::list<FileServerConnectionPtr>     m_FileServerConnectionList;				//TCP连接列表
 
-	std::atomic_int               m_nSessionID{};
+	std::atomic_int                        m_nSessionID{};
 };
 
 #endif // __FILE_SERVER_CONNECTION_H__

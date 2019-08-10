@@ -28,11 +28,11 @@ private:
 
 
 private:
-	std::shared_ptr<TcpServer>                       m_Server;
-	std::list<std::shared_ptr<ChatSession>> m_SessionList;      //会话列表
-	std::mutex                                                       m_SessionMutex;  //多线程之间保护m_SessionList
-	std::atomic_int                                               m_nSessionID{};
-	std::mutex                                                       m_IDMutex;           //多线程之间保护
-	std::atomic_bool                                            m_logPackageBinary;  //是否日志打印出包的二进制数据
+	std::shared_ptr<TcpServer>                   m_Server;
+	std::list<std::shared_ptr<ChatSession>>      m_SessionList;      //会话列表
+	std::mutex                                   m_SessionMutex;  //多线程之间保护m_SessionList
+	std::atomic_int                              m_nSessionID{};
+	std::mutex                                   m_IDMutex;           //多线程之间保护
+	std::atomic_bool                             m_logPackageBinary;  //是否日志打印出包的二进制数据
 };
 

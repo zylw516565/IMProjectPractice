@@ -6,6 +6,7 @@
 #Ignore files built by SourceInsight
 cache
 Backup
+project
 
 #Ignore files built by CMake
 CMakeLists.txt.user
