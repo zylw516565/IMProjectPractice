@@ -23,7 +23,7 @@ public:
 
 	static FileServerConnection& getInstance() { return Singleton<FileServerConnection>::Instance(); }
 
-	int initConnect(EventLoop* loop, const char* ip, short port, int64_t p_nTimerInterval);
+	int initConnect(EventLoop* loop, const std::vector<InetAddress>& p_NetAddrList, int64_t p_nTimerInterval);
 
 	void stop();
 
