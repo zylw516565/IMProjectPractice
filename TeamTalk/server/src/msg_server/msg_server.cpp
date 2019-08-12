@@ -16,6 +16,8 @@
 #include "FileServConn.h"
 //#include "version.h"
 
+#include <vector>
+
 #define DEFAULT_CONCURRENT_DB_CONN_CNT  10
 
 CAes *pAes;
@@ -103,8 +105,8 @@ int main(int argc, char* argv[])
 	for (uint32_t i = 0; i < db_server_count2; i++) {
 		db_server_list2[i].server_ip = db_server_list[i / concurrent_db_conn_cnt].server_ip.c_str();
 		db_server_list2[i].server_port = db_server_list[i / concurrent_db_conn_cnt].server_port;
-        std::string strNetAddr = db_server_list2[i].server_ip + ":" + db_server_list2[i].server_port;
-        strNetAddrList.pushback(strNetAddr);
+        std::string strNetAddr = db_server_list2[i].server_ip + ":" + std::to_string(db_server_list2[i].server_port);
+        strNetAddrList.push_back(strNetAddr);
 	}
 
 	if (!listen_ip || !str_listen_port || !ip_addr1) {
