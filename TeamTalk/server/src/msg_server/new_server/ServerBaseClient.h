@@ -1,17 +1,24 @@
 #ifndef __SERVER_BASE_CLIENT_H__
 #define __SERVER_BASE_CLIENT_H__
 
-#include "TcpClient.h"
-#include "EventLoop.h"
-#include "InetAddress.h"
+#include "../net/TcpClient.h"
+#include "../net/EventLoop.h"
+#include "../net/InetAddress.h"
+#include "../net/AsyncLog.h"
+
+#include "ImPduBase.h"
+
+
+using namespace net;
 
 class ServerBaseClient : public TcpClient
 {
 public:
-	ServerBaseClient(EventLoop* loop, const InetAddress& serverAddr, const string& nameArg)
-		:TcpClient(loop, serverAddr, nameArg)
-	{};
-	virtual ~ServerBaseClient();
+    
+	ServerBaseClient(EventLoop* loop, const InetAddress& serverAddr, const std::string& nameArg)
+        :TcpClient(loop, serverAddr, nameArg)
+	{}
+	virtual ~ServerBaseClient(){}
 
 protected:
 
@@ -34,7 +41,7 @@ protected:
 			return;
 		}
 
-		pIMPdu->Write(pBuffer->peek(), nPkgLen);
+		pIMPdu->Write(static_cast<uchar_t*>(pBuffer->peek()), nPkgLen);
 		pIMPdu->ReadPduHeader(pBuffer->peek(), IM_PDU_HEADER_LEN);
 	}
 
@@ -49,7 +56,7 @@ protected:
 
 		 connection()->send(pdu.GetBuffer(), pdu.GetLength());
 		 LOGT("heartbeat: length:%d, content:%s", pdu.GetLength(), pdu.GetBuffer());
-	 };
+	 }
 
 };
 

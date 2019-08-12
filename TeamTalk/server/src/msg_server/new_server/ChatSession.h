@@ -18,7 +18,6 @@ struct OnlineUserInfo
     int32_t     status;         //在线状态 0离线 1在线 2忙碌 3离开 4隐身
 };
 
-typedef  std::shared_ptr<CImPdu> IMPduPtr;
 
 /**
  * 聊天会话类

@@ -19,9 +19,9 @@ public:
 	TcpSession(const TcpSession& rhs) = delete;
 	TcpSession& operator=(const TcpSession& rhs) = delete;
 
-	std::weak_ptr<TcpConnection> getConnectionPtr()
+	std::shared_ptr<TcpConnection> getConnectionPtr()
 	{
-		if (tmpConn_->expired())
+		if (tmpConn_.expired())
 			return NULL;
 
 		return tmpConn_.lock();

@@ -4,7 +4,7 @@ PROJECT(msgserver)
 AUX_SOURCE_DIRECTORY(./ SRC_LIST)
 AUX_SOURCE_DIRECTORY(./base SRC_LIST)
 AUX_SOURCE_DIRECTORY(./net SRC_LIST)
-AUX_SOURCE_DIRECTORY(./new_server SRC_LIST)
+#AUX_SOURCE_DIRECTORY(./new_server SRC_LIST)
 #SET(LIBRARY_OUTPUT_PATH ./)
 SET(EXECUTABLE_OUTPUT_PATH  ../bin)
 if(APPLE)
@@ -23,9 +23,19 @@ ADD_DEFINITIONS( -g -W -Wall -D_REENTRANT -D_FILE_OFFSET_BITS=64 -DAC_HAS_INFO
 INCLUDE_DIRECTORIES(./ ../base ../base/pb/protocol ../base/pb/ ../base/security/)
 LINK_DIRECTORIES(./ ../bin ${PB_LIB_DIR} ../base/slog/lib ${SECURITY_LIB_DIR})
 
+set(MSGSERVER_SOURCES_FILE
+  ./new_server/TcpSession.cpp
+  ./new_server/LoginServerClient.cpp  
+  #./new_server/MsgServer.cpp
+)
+
+set(MSGSERVER_LIB_FILE
+)
+
 #ADD_XXXX必须在TARGET_LINK_LIBRARIES前面，否则会报错
 #ADD_LIBRARY(${PROJECTNAME} SHARED/STATIC ${SRC_LIST})
-ADD_EXECUTABLE(msg_server ${SRC_LIST})
+ADD_EXECUTABLE(msg_server ${SRC_LIST} ${MSGSERVER_SOURCES_FILE})
+target_link_libraries(msg_server ${MSGSERVER_LIB_FILE})
 
 TARGET_LINK_LIBRARIES(msg_server base protobuf-lite slog crypto pthread )
  

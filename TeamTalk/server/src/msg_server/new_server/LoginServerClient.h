@@ -10,8 +10,8 @@ class LoginServerClient :public ServerBaseClient
 public:
 	LoginServerClient(EventLoop* loop, const InetAddress& serverAddr, const string& nameArg)
 		:ServerBaseClient(loop, serverAddr, nameArg)
-	{};
-	~LoginServerClient();
+	{}
+	~LoginServerClient(){}
 
 public:
 
