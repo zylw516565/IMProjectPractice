@@ -27,7 +27,15 @@ private:
 	void onClose(const TcpConnectionPtr& conn);
 	void handleCommand(const IMPduPtr& pPdu);
 
-
+    void _HandleKickUser(const IMPduPtr& pPdu);
+	void _HandleStatusNotify(const IMPduPtr& pPdu);
+    void _HandleMsgReadNotify(const IMPduPtr& pPdu);
+	void _HandleMsgData(const IMPduPtr& pPdu);
+	void _HandleP2PMsg(const IMPduPtr& pPdu);
+	void _HandleUsersStatusResponse(const IMPduPtr& pPdu);
+    void _HandlePCLoginStatusNotify(const IMPduPtr& pPdu);
+    void _HandleRemoveSessionNotify(const IMPduPtr& pPdu);
+    void _HandleSignInfoChangedNotify(const IMPduPtr& pPdu);
 
 };
 
