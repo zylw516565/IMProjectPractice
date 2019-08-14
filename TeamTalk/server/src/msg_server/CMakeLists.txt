@@ -1,7 +1,7 @@
 cmake_minimum_required(VERSION 2.6)
 PROJECT(msgserver)
 
-AUX_SOURCE_DIRECTORY(./ SRC_LIST)
+#AUX_SOURCE_DIRECTORY(./ SRC_LIST)
 AUX_SOURCE_DIRECTORY(./base SRC_LIST)
 AUX_SOURCE_DIRECTORY(./net SRC_LIST)
 #AUX_SOURCE_DIRECTORY(./new_server SRC_LIST)
@@ -20,12 +20,14 @@ ADD_DEFINITIONS( -g -W -Wall -D_REENTRANT -D_FILE_OFFSET_BITS=64 -DAC_HAS_INFO
 -DAC_HAS_WARNING -DAC_HAS_ERROR -DAC_HAS_CRITICAL -DTIXML_USE_STL
 -DAC_HAS_DEBUG -DLINUX_DAEMON -std=c++11)
 
-INCLUDE_DIRECTORIES(./ ../base ../base/pb/protocol ../base/pb/ ../base/security/)
+INCLUDE_DIRECTORIES(./ ../new_server ../base/pb/protocol ../base/pb/ ../base/security/)
+#INCLUDE_DIRECTORIES(./ ../base ../base/pb/protocol ../base/pb/ ../base/security/)
 LINK_DIRECTORIES(./ ../bin ${PB_LIB_DIR} ../base/slog/lib ${SECURITY_LIB_DIR})
 
 set(MSGSERVER_SOURCES_FILE
   ./new_server/TcpSession.cpp
-  ./new_server/LoginServerClient.cpp  
+  ./new_server/LoginServerClient.cpp
+  ./new_server/MsgMain.cpp
   #./new_server/MsgServer.cpp
 )
 

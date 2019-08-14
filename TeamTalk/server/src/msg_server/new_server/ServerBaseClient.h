@@ -1,14 +1,17 @@
 #ifndef __SERVER_BASE_CLIENT_H__
 #define __SERVER_BASE_CLIENT_H__
 
+#include "../base/AsyncLog.h"
 #include "../net/TcpClient.h"
 #include "../net/EventLoop.h"
 #include "../net/InetAddress.h"
-#include "../net/AsyncLog.h"
+
+#include "IM.BaseDefine.pb.h"
+#include "IM.Other.pb.h"
 
 #include "ImPduBase.h"
 
-
+using namespace IM::BaseDefine;
 using namespace net;
 
 class ServerBaseClient : public TcpClient
@@ -41,8 +44,8 @@ protected:
 			return;
 		}
 
-		pIMPdu->Write(static_cast<uchar_t*>(pBuffer->peek()), nPkgLen);
-		pIMPdu->ReadPduHeader(pBuffer->peek(), IM_PDU_HEADER_LEN);
+		pIMPdu->Write((uchar_t*)(pBuffer->peek()), nPkgLen);
+		pIMPdu->ReadPduHeader((uchar_t*)pBuffer->peek(), IM_PDU_HEADER_LEN);
 	}
 
 	//每条TCP连接保持自己的心跳

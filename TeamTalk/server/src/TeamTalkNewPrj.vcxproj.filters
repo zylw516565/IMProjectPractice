@@ -584,6 +584,27 @@
     <ClCompile Include="msg_server\new_server\LoginServerClient.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="msg_server\new_server\FileServerClient.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="msg_server\new_server\FileServerConnection.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="msg_server\new_server\ImPduBase.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="msg_server\new_server\LoginServerConnection.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="msg_server\new_server\RouteServerClient.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="msg_server\new_server\RouteServerConnection.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="msg_server\new_server\UtilPdu.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="base\atomic.h">
@@ -1577,6 +1598,27 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="msg_server\new_server\LoginServerClient.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="msg_server\new_server\FileServerClient.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="msg_server\new_server\FileServerConnection.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="msg_server\new_server\ImPduBase.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="msg_server\new_server\LoginServerConnection.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="msg_server\new_server\RouteServerClient.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="msg_server\new_server\RouteServerConnection.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="msg_server\new_server\UtilPdu.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
